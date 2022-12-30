@@ -1,0 +1,208 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: CG.Seeding
+  name: CG.Seeding
+  href: api/CG.Seeding.html
+  commentId: N:CG.Seeding
+  fullName: CG.Seeding
+  nameWithType: CG.Seeding
+- uid: CG.Seeding.ISeedDirector
+  name: ISeedDirector
+  href: api/CG.Seeding.ISeedDirector.html
+  commentId: T:CG.Seeding.ISeedDirector
+  fullName: CG.Seeding.ISeedDirector
+  nameWithType: ISeedDirector
+- uid: CG.Seeding.ISeedDirector.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
+  name: SeedAsync(Boolean, List<String>, String, CancellationToken)
+  href: api/CG.Seeding.ISeedDirector.html#CG_Seeding_ISeedDirector_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_
+  commentId: M:CG.Seeding.ISeedDirector.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
+  name.vb: SeedAsync(Boolean, List(Of String), String, CancellationToken)
+  fullName: CG.Seeding.ISeedDirector.SeedAsync(System.Boolean, List<System.String>, System.String, CancellationToken)
+  fullName.vb: CG.Seeding.ISeedDirector.SeedAsync(System.Boolean, List(Of System.String), System.String, CancellationToken)
+  nameWithType: ISeedDirector.SeedAsync(Boolean, List<String>, String, CancellationToken)
+  nameWithType.vb: ISeedDirector.SeedAsync(Boolean, List(Of String), String, CancellationToken)
+- uid: CG.Seeding.ISeedDirector.SeedAsync*
+  name: SeedAsync
+  href: api/CG.Seeding.ISeedDirector.html#CG_Seeding_ISeedDirector_SeedAsync_
+  commentId: Overload:CG.Seeding.ISeedDirector.SeedAsync
+  isSpec: "True"
+  fullName: CG.Seeding.ISeedDirector.SeedAsync
+  nameWithType: ISeedDirector.SeedAsync
+- uid: CG.Seeding.Options
+  name: CG.Seeding.Options
+  href: api/CG.Seeding.Options.html
+  commentId: N:CG.Seeding.Options
+  fullName: CG.Seeding.Options
+  nameWithType: CG.Seeding.Options
+- uid: CG.Seeding.Options.SeedingOptions
+  name: SeedingOptions
+  href: api/CG.Seeding.Options.SeedingOptions.html
+  commentId: T:CG.Seeding.Options.SeedingOptions
+  fullName: CG.Seeding.Options.SeedingOptions
+  nameWithType: SeedingOptions
+- uid: CG.Seeding.Options.SeedingOptions.FileNames
+  name: FileNames
+  href: api/CG.Seeding.Options.SeedingOptions.html#CG_Seeding_Options_SeedingOptions_FileNames
+  commentId: P:CG.Seeding.Options.SeedingOptions.FileNames
+  fullName: CG.Seeding.Options.SeedingOptions.FileNames
+  nameWithType: SeedingOptions.FileNames
+- uid: CG.Seeding.Options.SeedingOptions.FileNames*
+  name: FileNames
+  href: api/CG.Seeding.Options.SeedingOptions.html#CG_Seeding_Options_SeedingOptions_FileNames_
+  commentId: Overload:CG.Seeding.Options.SeedingOptions.FileNames
+  isSpec: "True"
+  fullName: CG.Seeding.Options.SeedingOptions.FileNames
+  nameWithType: SeedingOptions.FileNames
+- uid: CG.Seeding.Options.SeedingOptions.Force
+  name: Force
+  href: api/CG.Seeding.Options.SeedingOptions.html#CG_Seeding_Options_SeedingOptions_Force
+  commentId: P:CG.Seeding.Options.SeedingOptions.Force
+  fullName: CG.Seeding.Options.SeedingOptions.Force
+  nameWithType: SeedingOptions.Force
+- uid: CG.Seeding.Options.SeedingOptions.Force*
+  name: Force
+  href: api/CG.Seeding.Options.SeedingOptions.html#CG_Seeding_Options_SeedingOptions_Force_
+  commentId: Overload:CG.Seeding.Options.SeedingOptions.Force
+  isSpec: "True"
+  fullName: CG.Seeding.Options.SeedingOptions.Force
+  nameWithType: SeedingOptions.Force
+- uid: CG.Seeding.Options.SeedingOptions.SeedOnStartup
+  name: SeedOnStartup
+  href: api/CG.Seeding.Options.SeedingOptions.html#CG_Seeding_Options_SeedingOptions_SeedOnStartup
+  commentId: P:CG.Seeding.Options.SeedingOptions.SeedOnStartup
+  fullName: CG.Seeding.Options.SeedingOptions.SeedOnStartup
+  nameWithType: SeedingOptions.SeedOnStartup
+- uid: CG.Seeding.Options.SeedingOptions.SeedOnStartup*
+  name: SeedOnStartup
+  href: api/CG.Seeding.Options.SeedingOptions.html#CG_Seeding_Options_SeedingOptions_SeedOnStartup_
+  commentId: Overload:CG.Seeding.Options.SeedingOptions.SeedOnStartup
+  isSpec: "True"
+  fullName: CG.Seeding.Options.SeedingOptions.SeedOnStartup
+  nameWithType: SeedingOptions.SeedOnStartup
+- uid: CG.Seeding.SeedDirectorBase`1
+  name: SeedDirectorBase<T>
+  href: api/CG.Seeding.SeedDirectorBase-1.html
+  commentId: T:CG.Seeding.SeedDirectorBase`1
+  name.vb: SeedDirectorBase(Of T)
+  fullName: CG.Seeding.SeedDirectorBase<T>
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T)
+  nameWithType: SeedDirectorBase<T>
+  nameWithType.vb: SeedDirectorBase(Of T)
+- uid: CG.Seeding.SeedDirectorBase`1.#ctor(ILogger{`0})
+  name: SeedDirectorBase(ILogger<T>)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1__ctor_ILogger__0__
+  commentId: M:CG.Seeding.SeedDirectorBase`1.#ctor(ILogger{`0})
+  name.vb: SeedDirectorBase(ILogger(Of T))
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedDirectorBase(ILogger<T>)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedDirectorBase(ILogger(Of T))
+  nameWithType: SeedDirectorBase<T>.SeedDirectorBase(ILogger<T>)
+  nameWithType.vb: SeedDirectorBase(Of T).SeedDirectorBase(ILogger(Of T))
+- uid: CG.Seeding.SeedDirectorBase`1.#ctor*
+  name: SeedDirectorBase
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1__ctor_
+  commentId: Overload:CG.Seeding.SeedDirectorBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedDirectorBase
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedDirectorBase
+  nameWithType: SeedDirectorBase<T>.SeedDirectorBase
+  nameWithType.vb: SeedDirectorBase(Of T).SeedDirectorBase
+- uid: CG.Seeding.SeedDirectorBase`1._logger
+  name: _logger
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1__logger
+  commentId: F:CG.Seeding.SeedDirectorBase`1._logger
+  fullName: CG.Seeding.SeedDirectorBase<T>._logger
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T)._logger
+  nameWithType: SeedDirectorBase<T>._logger
+  nameWithType.vb: SeedDirectorBase(Of T)._logger
+- uid: CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
+  name: SeedAsync(Boolean, List<String>, String, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
+  name.vb: SeedAsync(Boolean, List(Of String), String, CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedAsync(System.Boolean, List<System.String>, System.String, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedAsync(System.Boolean, List(Of System.String), System.String, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.SeedAsync(Boolean, List<String>, String, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).SeedAsync(Boolean, List(Of String), String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.SeedAsync*
+  name: SeedAsync
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedAsync_
+  commentId: Overload:CG.Seeding.SeedDirectorBase`1.SeedAsync
+  isSpec: "True"
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedAsync
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedAsync
+  nameWithType: SeedDirectorBase<T>.SeedAsync
+  nameWithType.vb: SeedDirectorBase(Of T).SeedAsync
+- uid: CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.Boolean,System.String,CancellationToken)
+  name: SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_System_String_IConfiguration_System_Boolean_System_String_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.Boolean,System.String,CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedFromConfiguration(System.String, IConfiguration, System.Boolean, System.String, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedFromConfiguration(System.String, IConfiguration, System.Boolean, System.String, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration*
+  name: SeedFromConfiguration
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_
+  commentId: Overload:CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration
+  isSpec: "True"
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedFromConfiguration
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedFromConfiguration
+  nameWithType: SeedDirectorBase<T>.SeedFromConfiguration
+  nameWithType.vb: SeedDirectorBase(Of T).SeedFromConfiguration
+- uid: Microsoft.AspNetCore.Builder
+  name: Microsoft.AspNetCore.Builder
+  href: api/Microsoft.AspNetCore.Builder.html
+  commentId: N:Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions
+  name: WebApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions
+  nameWithType: WebApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding*
+  name: AddSeeding
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions_AddSeeding_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding
+  nameWithType: WebApplicationBuilderExtensions.AddSeeding
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding``1(Microsoft.AspNetCore.Builder.WebApplicationBuilder,Action{SeedingOptions},System.Nullable{ILogger})
+  name: AddSeeding<T>(WebApplicationBuilder, Action<SeedingOptions>, Nullable<ILogger>)
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions_AddSeeding__1_Microsoft_AspNetCore_Builder_WebApplicationBuilder_Action_SeedingOptions__System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding``1(Microsoft.AspNetCore.Builder.WebApplicationBuilder,Action{SeedingOptions},System.Nullable{ILogger})
+  name.vb: AddSeeding(Of T)(WebApplicationBuilder, Action(Of SeedingOptions), Nullable(Of ILogger))
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding<T>(Microsoft.AspNetCore.Builder.WebApplicationBuilder, Action<SeedingOptions>, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding(Of T)(Microsoft.AspNetCore.Builder.WebApplicationBuilder, Action(Of SeedingOptions), System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions.AddSeeding<T>(WebApplicationBuilder, Action<SeedingOptions>, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions.AddSeeding(Of T)(WebApplicationBuilder, Action(Of SeedingOptions), Nullable(Of ILogger))
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding``1(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  name: AddSeeding<T>(WebApplicationBuilder, String, Nullable<ILogger>)
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions_AddSeeding__1_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding``1(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  name.vb: AddSeeding(Of T)(WebApplicationBuilder, String, Nullable(Of ILogger))
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding<T>(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddSeeding(Of T)(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions.AddSeeding<T>(WebApplicationBuilder, String, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions.AddSeeding(Of T)(WebApplicationBuilder, String, Nullable(Of ILogger))
+- uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions
+  name: WebApplicationExtensions
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationExtensions
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions
+  nameWithType: WebApplicationExtensions
+- uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseSeeding(Microsoft.AspNetCore.Builder.WebApplication)
+  name: UseSeeding(WebApplication)
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationExtensions_UseSeeding_Microsoft_AspNetCore_Builder_WebApplication_
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseSeeding(Microsoft.AspNetCore.Builder.WebApplication)
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseSeeding(Microsoft.AspNetCore.Builder.WebApplication)
+  nameWithType: WebApplicationExtensions.UseSeeding(WebApplication)
+- uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseSeeding*
+  name: UseSeeding
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationExtensions_UseSeeding_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseSeeding
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions.UseSeeding
+  nameWithType: WebApplicationExtensions.UseSeeding
