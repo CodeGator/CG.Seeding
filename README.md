@@ -1,8 +1,8 @@
 # CG.Seeding: 
-[![Build Status](https://dev.azure.com/codegator/CG.Seeding/_apis/build/status/CodeGator.CG.Seeding?branchName=main)](https://dev.azure.com/codegator/CG.Seeding/_build/latest?definitionId=90&branchName=main)
+[![Build Status](https://dev.azure.com/codegator/CG.Seeding/_apis/build/status/CodeGator.CG.Seeding?branchName=main)](https://dev.azure.com/codegator/CG.Seeding/_build/latest?definitionId=101&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Seeding/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Seeding.svg?style=flat)](https://nuget.org/packages/CG.Seeding)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Seeding/90)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Seeding/101)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Seeding/discussions)
 [![CG.Seeding on fuget.org](https://www.fuget.org/packages/CG.Seeding/badge.svg)](https://www.fuget.org/packages/CG.Seeding)
 
