@@ -63,6 +63,12 @@ public static class WebApplicationExtensions
                 seedingOptions.Value.FileNames.Any())
             {
                 // Log what we are about to do.
+                webApplication.Logger.LogInformation(
+                    "Seeding from {count} JSON files.",
+                    seedingOptions.Value.FileNames.Count
+                    );
+
+                // Log what we are about to do.
                 webApplication.Logger.LogDebug(
                     "Creating a DI scope."
                     );
