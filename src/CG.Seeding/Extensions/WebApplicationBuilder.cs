@@ -29,7 +29,7 @@ public static class WebApplicationExtensions
 
         // Log what we are about to do.
         webApplication.Logger.LogDebug(
-            "Checking the application's environment for seeding startup."
+            "Checking the application's environment for the seeder."
             );
 
         // We only touch the database in a development environment.
@@ -37,7 +37,7 @@ public static class WebApplicationExtensions
         {
             // Log what we are about to do.
             webApplication.Logger.LogDebug(
-                "Fetching the seed startup options from the DI container."
+                "Fetching the options for the seeder."
                 );
 
             // Get the seeding options.
@@ -64,13 +64,13 @@ public static class WebApplicationExtensions
             {
                 // Log what we are about to do.
                 webApplication.Logger.LogInformation(
-                    "Seeding from {count} JSON files.",
+                    "Seeding from {count} JSON files, for the seeder.",
                     seedingOptions.Value.FileNames.Count
                     );
 
                 // Log what we are about to do.
                 webApplication.Logger.LogDebug(
-                    "Creating a DI scope."
+                    "Creating a DI scope, for the seeder."
                     );
 
                 // Create a DI scope.
@@ -78,7 +78,7 @@ public static class WebApplicationExtensions
 
                 // Log what we are about to do.
                 webApplication.Logger.LogDebug(
-                    "Creating a seeding director instance."
+                    "Creating a seeding director instance, for the seeder."
                     );
 
                 // Get the seed director.
@@ -86,7 +86,7 @@ public static class WebApplicationExtensions
 
                 // Log what we are about to do.
                 webApplication.Logger.LogTrace(
-                    "Deferring to the {name} method",
+                    "Deferring to the {name} method, for the seeder",
                     nameof(ISeedDirector.SeedAsync)
                     );
 

@@ -41,7 +41,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Configuring seeding options from the {section} section",
+            "Configuring options from the {section} section, for the seeder",
             sectionName
             );
 
@@ -53,7 +53,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Wiring up the concrete seed director: '{type}'",
+            "Wiring up the concrete seed director: '{type}', for the seeder",
             typeof(T).Name
             );
 
@@ -94,7 +94,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Configuring seeding options from the caller"
+            "Configuring options from the caller, for the seeder"
             );
 
         // Give the caller a chance to configure the options.
@@ -103,7 +103,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Validating seeding options"
+            "Validating options for the seeder"
             );
 
         // Validate the options.
@@ -111,7 +111,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Registering the seeding options"
+            "Registering the options for the seeder"
             );
 
         // Add the options as a service.
@@ -121,7 +121,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Wiring up the concrete seed director: '{type}'",
+            "Wiring up the concrete seed director: '{type}', for the seeder",
             typeof(T).Name
             );
 
