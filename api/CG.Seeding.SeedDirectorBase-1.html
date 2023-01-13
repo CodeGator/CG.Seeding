@@ -200,13 +200,13 @@ class.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_" data-uid="CG.Seeding.SeedDirectorBase`1.AfterSeedAsync*"></a>
-  <h4 id="CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_System_Boolean_System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.Boolean,System.String,CancellationToken)">AfterSeedAsync(Boolean, String, CancellationToken)</h4>
+  <h4 id="CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_System_String_System_Boolean_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.String,System.Boolean,CancellationToken)">AfterSeedAsync(String, Boolean, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method is called after the seeding operation completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task AfterSeedAsync(bool force, string userName, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task AfterSeedAsync(string userName, bool force = false, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,18 +219,18 @@ class.</p>
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The user name of the person performing the
+operation.</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">force</span></td>
         <td><p><code>true</code> to force the seeding operation when data
 already exists in the associated table(s), <code>false</code> to stop the
 operation whenever data is detected in the associated table(s).</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">userName</span></td>
-        <td><p>The user name of the person performing the
-operation.</p>
 </td>
       </tr>
       <tr>
@@ -259,13 +259,13 @@ for the lifetime of the method.</p>
     </tbody>
   </table>
   <a id="CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_" data-uid="CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync*"></a>
-  <h4 id="CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_System_Boolean_System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.Boolean,System.String,CancellationToken)">BeforeSeedAsync(Boolean, String, CancellationToken)</h4>
+  <h4 id="CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_System_String_System_Boolean_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.String,System.Boolean,CancellationToken)">BeforeSeedAsync(String, Boolean, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method is called before the seeding operation starts.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task BeforeSeedAsync(bool force, string userName, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task BeforeSeedAsync(string userName, bool force = false, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -278,18 +278,18 @@ for the lifetime of the method.</p>
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The user name of the person performing the
+operation.</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">force</span></td>
         <td><p><code>true</code> to force the seeding operation when data
 already exists in the associated table(s), <code>false</code> to stop the
 operation whenever data is detected in the associated table(s).</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">userName</span></td>
-        <td><p>The user name of the person performing the
-operation.</p>
 </td>
       </tr>
       <tr>
@@ -318,14 +318,14 @@ for the lifetime of the method.</p>
     </tbody>
   </table>
   <a id="CG_Seeding_SeedDirectorBase_1_SeedAsync_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedAsync*"></a>
-  <h4 id="CG_Seeding_SeedDirectorBase_1_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)">SeedAsync(Boolean, List&lt;String&gt;, String, CancellationToken)</h4>
+  <h4 id="CG_Seeding_SeedDirectorBase_1_SeedAsync_List_System_String__System_String_System_Boolean_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedAsync(List{System.String},System.String,System.Boolean,CancellationToken)">SeedAsync(List&lt;String&gt;, String, Boolean, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method performs a seeding operation based on the
 content of the given <see cref="!:IConfiguration"></see> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task SeedAsync(bool force, List&lt;string&gt; fileNames, string userName, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task SeedAsync(List&lt;string&gt; fileNames, string userName, bool force = false, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -338,14 +338,6 @@ content of the given <see cref="!:IConfiguration"></see> object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">force</span></td>
-        <td><p><code>true</code> to force the seeding operation when data
-already exists in the associated table(s), <code>false</code> to stop the
-operation whenever data is detected in the associated table(s).</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">fileNames</span></td>
         <td><p>The collection of JSON files to use for the
@@ -357,6 +349,14 @@ operation.</p>
         <td><span class="parametername">userName</span></td>
         <td><p>The user name of the person performing the
 operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p><code>true</code> to force the seeding operation when data
+already exists in the associated table(s), <code>false</code> to stop the
+operation whenever data is detected in the associated table(s).</p>
 </td>
       </tr>
       <tr>
@@ -385,14 +385,12 @@ for the lifetime of the method.</p>
     </tbody>
   </table>
   <a id="CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration*"></a>
-  <h4 id="CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_System_String_IConfiguration_System_Boolean_System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.Boolean,System.String,CancellationToken)">SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>This method should be overridden to seed the data from the given
-<see cref="!:IConfiguration"></see> object.</p>
-</div>
+  <h4 id="CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_System_String_IConfiguration_System_String_System_Boolean_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.String,System.Boolean,CancellationToken)">SeedFromConfiguration(String, IConfiguration, String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract Task SeedFromConfiguration(string objectName, IConfiguration dataSection, bool force, string userName, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract Task SeedFromConfiguration(string objectName, IConfiguration dataSection, string userName, bool force = false, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -407,38 +405,27 @@ for the lifetime of the method.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">objectName</span></td>
-        <td><p>The object(s) name, as read from the root
-element of the incoming JSON file.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">IConfiguration</span></td>
         <td><span class="parametername">dataSection</span></td>
-        <td><p>A <see cref="!:IConfiguration"></see> object
-that contains an array of objects to use for the seeding operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">force</span></td>
-        <td><p><code>true</code> to force the seeding operation when data
-already exists in the associated table(s), <code>false</code> to stop the
-operation whenever data is detected in the associated table(s).</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">userName</span></td>
-        <td><p>The user name of the person performing the
-operation.</p>
-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>A cancellation token that is monitored
-for the lifetime of the method.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -453,8 +440,7 @@ for the lifetime of the method.</p>
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

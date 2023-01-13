@@ -13,15 +13,15 @@ references:
   commentId: T:CG.Seeding.ISeedDirectorBase
   fullName: CG.Seeding.ISeedDirectorBase
   nameWithType: ISeedDirectorBase
-- uid: CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
-  name: SeedAsync(Boolean, List<String>, String, CancellationToken)
-  href: api/CG.Seeding.ISeedDirectorBase.html#CG_Seeding_ISeedDirectorBase_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_
-  commentId: M:CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
-  name.vb: SeedAsync(Boolean, List(Of String), String, CancellationToken)
-  fullName: CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean, List<System.String>, System.String, CancellationToken)
-  fullName.vb: CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean, List(Of System.String), System.String, CancellationToken)
-  nameWithType: ISeedDirectorBase.SeedAsync(Boolean, List<String>, String, CancellationToken)
-  nameWithType.vb: ISeedDirectorBase.SeedAsync(Boolean, List(Of String), String, CancellationToken)
+- uid: CG.Seeding.ISeedDirectorBase.SeedAsync(List{System.String},System.String,System.Boolean,CancellationToken)
+  name: SeedAsync(List<String>, String, Boolean, CancellationToken)
+  href: api/CG.Seeding.ISeedDirectorBase.html#CG_Seeding_ISeedDirectorBase_SeedAsync_List_System_String__System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Seeding.ISeedDirectorBase.SeedAsync(List{System.String},System.String,System.Boolean,CancellationToken)
+  name.vb: SeedAsync(List(Of String), String, Boolean, CancellationToken)
+  fullName: CG.Seeding.ISeedDirectorBase.SeedAsync(List<System.String>, System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Seeding.ISeedDirectorBase.SeedAsync(List(Of System.String), System.String, System.Boolean, CancellationToken)
+  nameWithType: ISeedDirectorBase.SeedAsync(List<String>, String, Boolean, CancellationToken)
+  nameWithType.vb: ISeedDirectorBase.SeedAsync(List(Of String), String, Boolean, CancellationToken)
 - uid: CG.Seeding.ISeedDirectorBase.SeedAsync*
   name: SeedAsync
   href: api/CG.Seeding.ISeedDirectorBase.html#CG_Seeding_ISeedDirectorBase_SeedAsync_
@@ -115,14 +115,14 @@ references:
   fullName.vb: CG.Seeding.SeedDirectorBase(Of T)._logger
   nameWithType: SeedDirectorBase<T>._logger
   nameWithType.vb: SeedDirectorBase(Of T)._logger
-- uid: CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.Boolean,System.String,CancellationToken)
-  name: AfterSeedAsync(Boolean, String, CancellationToken)
-  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_System_Boolean_System_String_CancellationToken_
-  commentId: M:CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.Boolean,System.String,CancellationToken)
-  fullName: CG.Seeding.SeedDirectorBase<T>.AfterSeedAsync(System.Boolean, System.String, CancellationToken)
-  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).AfterSeedAsync(System.Boolean, System.String, CancellationToken)
-  nameWithType: SeedDirectorBase<T>.AfterSeedAsync(Boolean, String, CancellationToken)
-  nameWithType.vb: SeedDirectorBase(Of T).AfterSeedAsync(Boolean, String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.String,System.Boolean,CancellationToken)
+  name: AfterSeedAsync(String, Boolean, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.String,System.Boolean,CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.AfterSeedAsync(System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).AfterSeedAsync(System.String, System.Boolean, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.AfterSeedAsync(String, Boolean, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).AfterSeedAsync(String, Boolean, CancellationToken)
 - uid: CG.Seeding.SeedDirectorBase`1.AfterSeedAsync*
   name: AfterSeedAsync
   href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_
@@ -132,14 +132,14 @@ references:
   fullName.vb: CG.Seeding.SeedDirectorBase(Of T).AfterSeedAsync
   nameWithType: SeedDirectorBase<T>.AfterSeedAsync
   nameWithType.vb: SeedDirectorBase(Of T).AfterSeedAsync
-- uid: CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.Boolean,System.String,CancellationToken)
-  name: BeforeSeedAsync(Boolean, String, CancellationToken)
-  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_System_Boolean_System_String_CancellationToken_
-  commentId: M:CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.Boolean,System.String,CancellationToken)
-  fullName: CG.Seeding.SeedDirectorBase<T>.BeforeSeedAsync(System.Boolean, System.String, CancellationToken)
-  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).BeforeSeedAsync(System.Boolean, System.String, CancellationToken)
-  nameWithType: SeedDirectorBase<T>.BeforeSeedAsync(Boolean, String, CancellationToken)
-  nameWithType.vb: SeedDirectorBase(Of T).BeforeSeedAsync(Boolean, String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.String,System.Boolean,CancellationToken)
+  name: BeforeSeedAsync(String, Boolean, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.String,System.Boolean,CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.BeforeSeedAsync(System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).BeforeSeedAsync(System.String, System.Boolean, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.BeforeSeedAsync(String, Boolean, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).BeforeSeedAsync(String, Boolean, CancellationToken)
 - uid: CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync*
   name: BeforeSeedAsync
   href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_
@@ -149,15 +149,15 @@ references:
   fullName.vb: CG.Seeding.SeedDirectorBase(Of T).BeforeSeedAsync
   nameWithType: SeedDirectorBase<T>.BeforeSeedAsync
   nameWithType.vb: SeedDirectorBase(Of T).BeforeSeedAsync
-- uid: CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
-  name: SeedAsync(Boolean, List<String>, String, CancellationToken)
-  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_
-  commentId: M:CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
-  name.vb: SeedAsync(Boolean, List(Of String), String, CancellationToken)
-  fullName: CG.Seeding.SeedDirectorBase<T>.SeedAsync(System.Boolean, List<System.String>, System.String, CancellationToken)
-  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedAsync(System.Boolean, List(Of System.String), System.String, CancellationToken)
-  nameWithType: SeedDirectorBase<T>.SeedAsync(Boolean, List<String>, String, CancellationToken)
-  nameWithType.vb: SeedDirectorBase(Of T).SeedAsync(Boolean, List(Of String), String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.SeedAsync(List{System.String},System.String,System.Boolean,CancellationToken)
+  name: SeedAsync(List<String>, String, Boolean, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedAsync_List_System_String__System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.SeedAsync(List{System.String},System.String,System.Boolean,CancellationToken)
+  name.vb: SeedAsync(List(Of String), String, Boolean, CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedAsync(List<System.String>, System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedAsync(List(Of System.String), System.String, System.Boolean, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.SeedAsync(List<String>, String, Boolean, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).SeedAsync(List(Of String), String, Boolean, CancellationToken)
 - uid: CG.Seeding.SeedDirectorBase`1.SeedAsync*
   name: SeedAsync
   href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedAsync_
@@ -167,14 +167,14 @@ references:
   fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedAsync
   nameWithType: SeedDirectorBase<T>.SeedAsync
   nameWithType.vb: SeedDirectorBase(Of T).SeedAsync
-- uid: CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.Boolean,System.String,CancellationToken)
-  name: SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)
-  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_System_String_IConfiguration_System_Boolean_System_String_CancellationToken_
-  commentId: M:CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.Boolean,System.String,CancellationToken)
-  fullName: CG.Seeding.SeedDirectorBase<T>.SeedFromConfiguration(System.String, IConfiguration, System.Boolean, System.String, CancellationToken)
-  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedFromConfiguration(System.String, IConfiguration, System.Boolean, System.String, CancellationToken)
-  nameWithType: SeedDirectorBase<T>.SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)
-  nameWithType.vb: SeedDirectorBase(Of T).SeedFromConfiguration(String, IConfiguration, Boolean, String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.String,System.Boolean,CancellationToken)
+  name: SeedFromConfiguration(String, IConfiguration, String, Boolean, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_System_String_IConfiguration_System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration(System.String,IConfiguration,System.String,System.Boolean,CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.SeedFromConfiguration(System.String, IConfiguration, System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).SeedFromConfiguration(System.String, IConfiguration, System.String, System.Boolean, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.SeedFromConfiguration(String, IConfiguration, String, Boolean, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).SeedFromConfiguration(String, IConfiguration, String, Boolean, CancellationToken)
 - uid: CG.Seeding.SeedDirectorBase`1.SeedFromConfiguration*
   name: SeedFromConfiguration
   href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedFromConfiguration_
