@@ -37,7 +37,8 @@ public static class WebApplicationExtensions
         {
             // Log what we are about to do.
             webApplication.Logger.LogDebug(
-                "Fetching the options for the seeder."
+                "Fetching the {op} options, for the seeder.",
+                nameof(SeedingOptions)
                 );
 
             // Get the seeding options.
@@ -50,61 +51,59 @@ public static class WebApplicationExtensions
             {
                 // Log what we didn't do.
                 webApplication.Logger.LogWarning(
-                    "Ignoring seeding startup because the SeedOnStartup flag " +
-                    "is either false, or missing."
+                    "Ignoring seeding startup because the SeedOnStartup flag, " +
+                    "in the {op} options, is either false, or missing. This " +
+                    "can also happen if the {name}' method hasn't been called " +
+                    "from the application's startup",
+                    nameof(SeedingOptions),
+                    nameof(WebApplicationBuilderExtensions.AddSeeding)
                     );
 
                 // Return the application.
                 return webApplication;
             }
 
-            // Are there any files to process?
-            if (seedingOptions.Value.FileNames is not null &&
-                seedingOptions.Value.FileNames.Any())
+            // Sanity check the file names list.
+            if (seedingOptions.Value.FileNames is null)
             {
-                // Log what we are about to do.
-                webApplication.Logger.LogInformation(
-                    "Seeding from {count} JSON files, for the seeder.",
-                    seedingOptions.Value.FileNames.Count
-                    );
-
-                // Log what we are about to do.
-                webApplication.Logger.LogDebug(
-                    "Creating a DI scope, for the seeder."
-                    );
-
-                // Create a DI scope.
-                using var scope = webApplication.Services.CreateScope();
-
-                // Log what we are about to do.
-                webApplication.Logger.LogDebug(
-                    "Creating a seeding director instance, for the seeder."
-                    );
-
-                // Get the seed director.
-                var director = scope.ServiceProvider.GetRequiredService<ISeedDirectorBase>();
-
-                // Log what we are about to do.
-                webApplication.Logger.LogTrace(
-                    "Deferring to the {name} method, for the seeder",
-                    nameof(ISeedDirectorBase.SeedAsync)
-                    );
-
-                // Perform the seeding operation(s).
-                director.SeedAsync(
-                    seedingOptions.Value.FileNames,
-                    "seed",
-                    seedingOptions.Value.Force
-                    ).Wait();
+                // Supply an empty list.
+                seedingOptions.Value.FileNames = new();
             }
-            else
-            {
-                // Log what we didn't do.
-                webApplication.Logger.LogInformation(
-                    "Ignoring seeding startup because the FileNames collection " +
-                    "is empty, or missing."
-                    );
-            }
+
+            // Log what we are about to do.
+            webApplication.Logger.LogInformation(
+                "Seeding from {count} JSON files, for the seeder.",
+                seedingOptions.Value.FileNames.Count
+                );
+
+            // Log what we are about to do.
+            webApplication.Logger.LogDebug(
+                "Creating a DI scope, for the seeder."
+                );
+
+            // Create a DI scope.
+            using var scope = webApplication.Services.CreateScope();
+
+            // Log what we are about to do.
+            webApplication.Logger.LogDebug(
+                "Creating a seeding director instance, for the seeder."
+                );
+
+            // Get the seed director.
+            var director = scope.ServiceProvider.GetRequiredService<ISeedDirectorBase>();
+
+            // Log what we are about to do.
+            webApplication.Logger.LogTrace(
+                "Deferring to the {name} method, for the seeder",
+                nameof(ISeedDirectorBase.SeedAsync)
+                );
+
+            // Perform the seeding operation(s).
+            director.SeedAsync(
+                seedingOptions.Value.FileNames,
+                "seed",
+                seedingOptions.Value.Force
+                ).Wait();
         }
         else
         {
