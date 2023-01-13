@@ -92,9 +92,9 @@ public static class WebApplicationExtensions
 
                 // Perform the seeding operation(s).
                 director.SeedAsync(
-                    seedingOptions.Value.Force,
                     seedingOptions.Value.FileNames,
-                    "seed"
+                    "seed",
+                    seedingOptions.Value.Force
                     ).Wait();
             }
             else

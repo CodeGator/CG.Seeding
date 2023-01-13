@@ -54,9 +54,9 @@ public abstract class SeedDirectorBase<T> : ISeedDirectorBase
 
     /// <inheritdoc/>
     public async virtual Task SeedAsync(
-        bool force, 
         List<string> fileNames, 
         string userName,
+        bool force = false,
         CancellationToken cancellationToken = default
         )
     {
@@ -66,8 +66,8 @@ public abstract class SeedDirectorBase<T> : ISeedDirectorBase
 
         // Signal the start of the operation.
         await BeforeSeedAsync(
-            force,
             userName,
+            force,
             cancellationToken
             ).ConfigureAwait(false);
 
@@ -114,16 +114,16 @@ public abstract class SeedDirectorBase<T> : ISeedDirectorBase
             await SeedFromConfiguration(
                 rootValue?.Key ?? "",
                 configuration,
-                force,
                 userName,
+                force,
                 cancellationToken
                 ).ConfigureAwait(false);
         }
 
         // Signal the end of the operation.
         await AfterSeedAsync(
-            force,
             userName,
+            force,
             cancellationToken
             ).ConfigureAwait(false);
     }
@@ -136,27 +136,12 @@ public abstract class SeedDirectorBase<T> : ISeedDirectorBase
 
     #region Protected methods
 
-    /// <summary>
-    /// This method should be overridden to seed the data from the given 
-    /// <see cref="IConfiguration"/> object.
-    /// </summary>
-    /// <param name="objectName">The object(s) name, as read from the root 
-    /// element of the incoming JSON file.</param>
-    /// <param name="dataSection">A <see cref="IConfiguration"/> object 
-    /// that contains an array of objects to use for the seeding operation.</param>
-    /// <param name="force"><c>true</c> to force the seeding operation when data
-    /// already exists in the associated table(s), <c>false</c> to stop the 
-    /// operation whenever data is detected in the associated table(s).</param>
-    /// <param name="userName">The user name of the person performing the 
-    /// operation.</param>
-    /// <param name="cancellationToken">A cancellation token that is monitored
-    /// for the lifetime of the method.</param>
-    /// <returns>A task to perform the operation.</returns>
+    /// <inheritdoc/>
     protected abstract Task SeedFromConfiguration(
         string objectName,
         IConfiguration dataSection,
-        bool force,
         string userName,
+        bool force = false,
         CancellationToken cancellationToken = default
         );
 
@@ -174,8 +159,8 @@ public abstract class SeedDirectorBase<T> : ISeedDirectorBase
     /// for the lifetime of the method.</param>
     /// <returns>A task to perform the operation.</returns>
     protected virtual Task BeforeSeedAsync(
-        bool force,
         string userName,
+        bool force = false,
         CancellationToken cancellationToken = default
         )
     {
@@ -196,8 +181,8 @@ public abstract class SeedDirectorBase<T> : ISeedDirectorBase
     /// for the lifetime of the method.</param>
     /// <returns>A task to perform the operation.</returns>
     protected virtual Task AfterSeedAsync(
-        bool force,
         string userName,
+        bool force = false,
         CancellationToken cancellationToken = default
         )
     {
