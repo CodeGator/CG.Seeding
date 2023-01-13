@@ -33,7 +33,7 @@ public static class WebApplicationBuilderExtensions
         this WebApplicationBuilder webApplicationBuilder,
         string sectionName = "Seeding",
         ILogger? bootstrapLogger = null
-        ) where T : class, ISeedDirector
+        ) where T : SeedDirectorBase<T>
     {
         // Validate the parameters before attempting to use them.
         Guard.Instance().ThrowIfNull(webApplicationBuilder, nameof(webApplicationBuilder))
@@ -58,7 +58,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Add the director.
-        webApplicationBuilder.Services.AddScoped<ISeedDirector, T>();
+        webApplicationBuilder.Services.AddScoped<ISeedDirectorBase, T>();
 
         // Return the application builder.
         return webApplicationBuilder;
@@ -86,7 +86,7 @@ public static class WebApplicationBuilderExtensions
         this WebApplicationBuilder webApplicationBuilder,
         Action<SeedingOptions> optionsDelegate,
         ILogger? bootstrapLogger = null
-        ) where T : class, ISeedDirector
+        ) where T : SeedDirectorBase<T>
     {
         // Validate the parameters before attempting to use them.
         Guard.Instance().ThrowIfNull(webApplicationBuilder, nameof(webApplicationBuilder))
@@ -126,7 +126,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Add the director.
-        webApplicationBuilder.Services.AddScoped<ISeedDirector, T>();
+        webApplicationBuilder.Services.AddScoped<ISeedDirectorBase, T>();
 
         // Return the application builder.
         return webApplicationBuilder;
@@ -134,5 +134,3 @@ public static class WebApplicationBuilderExtensions
 
     #endregion
 }
-
-

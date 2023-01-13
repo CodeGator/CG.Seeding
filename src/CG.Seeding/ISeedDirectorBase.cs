@@ -4,7 +4,7 @@ namespace CG.Seeding;
 /// <summary>
 /// This interface represents an object that performs data seeding operations.
 /// </summary>
-public interface ISeedDirector
+public interface ISeedDirectorBase
 {
     /// <summary>
     /// This method performs a seeding operation based on the 

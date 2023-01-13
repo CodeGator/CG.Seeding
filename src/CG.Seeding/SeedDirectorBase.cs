@@ -1,14 +1,12 @@
 ﻿
-
-
 namespace CG.Seeding;
 
 /// <summary>
-/// This class is a base implementation of the <see cref="ISeedDirector"/>
+/// This class is a base implementation of the <see cref="ISeedDirectorBase"/>
 /// interface.
 /// </summary>
 /// <typeparam name="T">The associated concrete seed director class.</typeparam>
-public abstract class SeedDirectorBase<T> : ISeedDirector
+public abstract class SeedDirectorBase<T> : ISeedDirectorBase
     where T : SeedDirectorBase<T>
 {
     // *******************************************************************
@@ -66,6 +64,13 @@ public abstract class SeedDirectorBase<T> : ISeedDirector
         Guard.Instance().ThrowIfNull(fileNames, nameof(fileNames))
             .ThrowIfNullOrEmpty(userName, nameof(userName));
 
+        // Signal the start of the operation.
+        await BeforeSeedAsync(
+            force,
+            userName,
+            cancellationToken
+            ).ConfigureAwait(false);
+
         // Log what we are about to do.
         _logger.LogDebug(
             "Seeding (count) JSON files.",
@@ -114,6 +119,13 @@ public abstract class SeedDirectorBase<T> : ISeedDirector
                 cancellationToken
                 ).ConfigureAwait(false);
         }
+
+        // Signal the end of the operation.
+        await AfterSeedAsync(
+            force,
+            userName,
+            cancellationToken
+            ).ConfigureAwait(false);
     }
 
     #endregion
@@ -147,6 +159,50 @@ public abstract class SeedDirectorBase<T> : ISeedDirector
         string userName,
         CancellationToken cancellationToken = default
         );
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called before the seeding operation starts.
+    /// </summary>
+    /// <param name="force"><c>true</c> to force the seeding operation when data
+    /// already exists in the associated table(s), <c>false</c> to stop the 
+    /// operation whenever data is detected in the associated table(s).</param>
+    /// <param name="userName">The user name of the person performing the 
+    /// operation.</param>
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected virtual Task BeforeSeedAsync(
+        bool force,
+        string userName,
+        CancellationToken cancellationToken = default
+        )
+    {
+        return Task.CompletedTask;
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called after the seeding operation completes.
+    /// </summary>
+    /// <param name="force"><c>true</c> to force the seeding operation when data
+    /// already exists in the associated table(s), <c>false</c> to stop the 
+    /// operation whenever data is detected in the associated table(s).</param>
+    /// <param name="userName">The user name of the person performing the 
+    /// operation.</param>
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected virtual Task AfterSeedAsync(
+        bool force,
+        string userName,
+        CancellationToken cancellationToken = default
+        )
+    {
+        return Task.CompletedTask;
+    }
 
     #endregion
 }

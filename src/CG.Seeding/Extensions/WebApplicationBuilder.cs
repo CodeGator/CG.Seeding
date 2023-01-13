@@ -82,12 +82,12 @@ public static class WebApplicationExtensions
                     );
 
                 // Get the seed director.
-                var director = scope.ServiceProvider.GetRequiredService<ISeedDirector>();
+                var director = scope.ServiceProvider.GetRequiredService<ISeedDirectorBase>();
 
                 // Log what we are about to do.
                 webApplication.Logger.LogTrace(
                     "Deferring to the {name} method, for the seeder",
-                    nameof(ISeedDirector.SeedAsync)
+                    nameof(ISeedDirectorBase.SeedAsync)
                     );
 
                 // Perform the seeding operation(s).
