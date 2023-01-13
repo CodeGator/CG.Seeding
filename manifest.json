@@ -14,11 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Seeding.ISeedDirector.yml",
+      "source_relative_path": "api/CG.Seeding.ISeedDirectorBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Seeding.ISeedDirector.html",
-          "hash": "YSNaLlGCcowUCHMhOSdNDolYaIh0zJxiMPXsJ3punnM="
+          "relative_path": "api/CG.Seeding.ISeedDirectorBase.html",
+          "hash": "SlRLz1RNOnYQyFxZSypSJNNsQnqjRXiotmnjU/s5nGA="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Seeding.SeedDirectorBase-1.html",
-          "hash": "8LNM4TQcKutfOdjiWKNFvR+QqQIvrMFjMXWQpNHfZSo="
+          "hash": "oibV+OrTi0FXqClUSZFCtR6xWcJm/R48aaE0qd2LuMk="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Seeding.html",
-          "hash": "X8X8bXUnm+nJ1XYJ7REGAA3U0FF1cORk75w9S6GPraA="
+          "hash": "lhrYlYw0n2fW7SU9Q5PyhJ/yZuLVrTI/Oa2/+PdZIvY="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html",
-          "hash": "Up+wULqACEbcMqTNMth7cn24lyN51GJeS298W5nDzYc="
+          "hash": "vW/h1U4OzIf6zR60zJcwiIKHN78Cefl5iB1JS0szuho="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "EImyQaGk46p2Kz8VfXJEnq7RYK7Rl+T0YKLCu/y3jek="
+          "hash": "X4NjmmOP3pdkYFVBZIQoaf7TQN4cDZYhUXnDOVTWc4o="
         }
       },
       "is_incremental": false,

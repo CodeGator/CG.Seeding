@@ -83,7 +83,7 @@
   
   <h1 id="CG_Seeding_SeedDirectorBase_1" data-uid="CG.Seeding.SeedDirectorBase`1" class="text-break">Class SeedDirectorBase&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This class is a base implementation of the <a class="xref" href="CG.Seeding.ISeedDirector.html">ISeedDirector</a>
+  <div class="markdown level0 summary"><p>This class is a base implementation of the <a class="xref" href="CG.Seeding.ISeedDirectorBase.html">ISeedDirectorBase</a>
 interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -94,7 +94,7 @@ interface.</p>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="CG.Seeding.ISeedDirector.html">ISeedDirector</a></div>
+    <div><a class="xref" href="CG.Seeding.ISeedDirectorBase.html">ISeedDirectorBase</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -124,7 +124,7 @@ interface.</p>
   <h6><strong>Assembly</strong>: CG.Seeding.dll</h6>
   <h5 id="CG_Seeding_SeedDirectorBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SeedDirectorBase&lt;T&gt; : ISeedDirector where T : SeedDirectorBase&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SeedDirectorBase&lt;T&gt; : ISeedDirectorBase where T : SeedDirectorBase&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,6 +199,124 @@ class.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
+  <a id="CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_" data-uid="CG.Seeding.SeedDirectorBase`1.AfterSeedAsync*"></a>
+  <h4 id="CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_System_Boolean_System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.Boolean,System.String,CancellationToken)">AfterSeedAsync(Boolean, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method is called after the seeding operation completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task AfterSeedAsync(bool force, string userName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p><code>true</code> to force the seeding operation when data
+already exists in the associated table(s), <code>false</code> to stop the
+operation whenever data is detected in the associated table(s).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The user name of the person performing the
+operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that is monitored
+for the lifetime of the method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_" data-uid="CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync*"></a>
+  <h4 id="CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_System_Boolean_System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.Boolean,System.String,CancellationToken)">BeforeSeedAsync(Boolean, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method is called before the seeding operation starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task BeforeSeedAsync(bool force, string userName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p><code>true</code> to force the seeding operation when data
+already exists in the associated table(s), <code>false</code> to stop the
+operation whenever data is detected in the associated table(s).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The user name of the person performing the
+operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that is monitored
+for the lifetime of the method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Seeding_SeedDirectorBase_1_SeedAsync_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedAsync*"></a>
   <h4 id="CG_Seeding_SeedDirectorBase_1_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_" data-uid="CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)">SeedAsync(Boolean, List&lt;String&gt;, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method performs a seeding operation based on the
@@ -342,7 +460,7 @@ for the lifetime of the method.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="CG.Seeding.ISeedDirector.html">ISeedDirector</a>
+      <a class="xref" href="CG.Seeding.ISeedDirectorBase.html">ISeedDirectorBase</a>
   </div>
 </article>
           </div>

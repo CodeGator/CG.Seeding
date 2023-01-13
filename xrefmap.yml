@@ -7,28 +7,28 @@ references:
   commentId: N:CG.Seeding
   fullName: CG.Seeding
   nameWithType: CG.Seeding
-- uid: CG.Seeding.ISeedDirector
-  name: ISeedDirector
-  href: api/CG.Seeding.ISeedDirector.html
-  commentId: T:CG.Seeding.ISeedDirector
-  fullName: CG.Seeding.ISeedDirector
-  nameWithType: ISeedDirector
-- uid: CG.Seeding.ISeedDirector.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
+- uid: CG.Seeding.ISeedDirectorBase
+  name: ISeedDirectorBase
+  href: api/CG.Seeding.ISeedDirectorBase.html
+  commentId: T:CG.Seeding.ISeedDirectorBase
+  fullName: CG.Seeding.ISeedDirectorBase
+  nameWithType: ISeedDirectorBase
+- uid: CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
   name: SeedAsync(Boolean, List<String>, String, CancellationToken)
-  href: api/CG.Seeding.ISeedDirector.html#CG_Seeding_ISeedDirector_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_
-  commentId: M:CG.Seeding.ISeedDirector.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
+  href: api/CG.Seeding.ISeedDirectorBase.html#CG_Seeding_ISeedDirectorBase_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_
+  commentId: M:CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
   name.vb: SeedAsync(Boolean, List(Of String), String, CancellationToken)
-  fullName: CG.Seeding.ISeedDirector.SeedAsync(System.Boolean, List<System.String>, System.String, CancellationToken)
-  fullName.vb: CG.Seeding.ISeedDirector.SeedAsync(System.Boolean, List(Of System.String), System.String, CancellationToken)
-  nameWithType: ISeedDirector.SeedAsync(Boolean, List<String>, String, CancellationToken)
-  nameWithType.vb: ISeedDirector.SeedAsync(Boolean, List(Of String), String, CancellationToken)
-- uid: CG.Seeding.ISeedDirector.SeedAsync*
+  fullName: CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean, List<System.String>, System.String, CancellationToken)
+  fullName.vb: CG.Seeding.ISeedDirectorBase.SeedAsync(System.Boolean, List(Of System.String), System.String, CancellationToken)
+  nameWithType: ISeedDirectorBase.SeedAsync(Boolean, List<String>, String, CancellationToken)
+  nameWithType.vb: ISeedDirectorBase.SeedAsync(Boolean, List(Of String), String, CancellationToken)
+- uid: CG.Seeding.ISeedDirectorBase.SeedAsync*
   name: SeedAsync
-  href: api/CG.Seeding.ISeedDirector.html#CG_Seeding_ISeedDirector_SeedAsync_
-  commentId: Overload:CG.Seeding.ISeedDirector.SeedAsync
+  href: api/CG.Seeding.ISeedDirectorBase.html#CG_Seeding_ISeedDirectorBase_SeedAsync_
+  commentId: Overload:CG.Seeding.ISeedDirectorBase.SeedAsync
   isSpec: "True"
-  fullName: CG.Seeding.ISeedDirector.SeedAsync
-  nameWithType: ISeedDirector.SeedAsync
+  fullName: CG.Seeding.ISeedDirectorBase.SeedAsync
+  nameWithType: ISeedDirectorBase.SeedAsync
 - uid: CG.Seeding.Options
   name: CG.Seeding.Options
   href: api/CG.Seeding.Options.html
@@ -115,6 +115,40 @@ references:
   fullName.vb: CG.Seeding.SeedDirectorBase(Of T)._logger
   nameWithType: SeedDirectorBase<T>._logger
   nameWithType.vb: SeedDirectorBase(Of T)._logger
+- uid: CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.Boolean,System.String,CancellationToken)
+  name: AfterSeedAsync(Boolean, String, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_System_Boolean_System_String_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.AfterSeedAsync(System.Boolean,System.String,CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.AfterSeedAsync(System.Boolean, System.String, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).AfterSeedAsync(System.Boolean, System.String, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.AfterSeedAsync(Boolean, String, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).AfterSeedAsync(Boolean, String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.AfterSeedAsync*
+  name: AfterSeedAsync
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_AfterSeedAsync_
+  commentId: Overload:CG.Seeding.SeedDirectorBase`1.AfterSeedAsync
+  isSpec: "True"
+  fullName: CG.Seeding.SeedDirectorBase<T>.AfterSeedAsync
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).AfterSeedAsync
+  nameWithType: SeedDirectorBase<T>.AfterSeedAsync
+  nameWithType.vb: SeedDirectorBase(Of T).AfterSeedAsync
+- uid: CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.Boolean,System.String,CancellationToken)
+  name: BeforeSeedAsync(Boolean, String, CancellationToken)
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_System_Boolean_System_String_CancellationToken_
+  commentId: M:CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync(System.Boolean,System.String,CancellationToken)
+  fullName: CG.Seeding.SeedDirectorBase<T>.BeforeSeedAsync(System.Boolean, System.String, CancellationToken)
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).BeforeSeedAsync(System.Boolean, System.String, CancellationToken)
+  nameWithType: SeedDirectorBase<T>.BeforeSeedAsync(Boolean, String, CancellationToken)
+  nameWithType.vb: SeedDirectorBase(Of T).BeforeSeedAsync(Boolean, String, CancellationToken)
+- uid: CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync*
+  name: BeforeSeedAsync
+  href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_BeforeSeedAsync_
+  commentId: Overload:CG.Seeding.SeedDirectorBase`1.BeforeSeedAsync
+  isSpec: "True"
+  fullName: CG.Seeding.SeedDirectorBase<T>.BeforeSeedAsync
+  fullName.vb: CG.Seeding.SeedDirectorBase(Of T).BeforeSeedAsync
+  nameWithType: SeedDirectorBase<T>.BeforeSeedAsync
+  nameWithType.vb: SeedDirectorBase(Of T).BeforeSeedAsync
 - uid: CG.Seeding.SeedDirectorBase`1.SeedAsync(System.Boolean,List{System.String},System.String,CancellationToken)
   name: SeedAsync(Boolean, List<String>, String, CancellationToken)
   href: api/CG.Seeding.SeedDirectorBase-1.html#CG_Seeding_SeedDirectorBase_1_SeedAsync_System_Boolean_List_System_String__System_String_CancellationToken_

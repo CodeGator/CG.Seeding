@@ -133,7 +133,7 @@ operations.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static WebApplicationBuilder AddSeeding&lt;T&gt;(this WebApplicationBuilder webApplicationBuilder, Action&lt;SeedingOptions&gt; optionsDelegate, ILogger? bootstrapLogger = null)
-    where T : class, ISeedDirector</code></pre>
+    where T : SeedDirectorBase&lt;T&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,7 +211,7 @@ operations.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static WebApplicationBuilder AddSeeding&lt;T&gt;(this WebApplicationBuilder webApplicationBuilder, string sectionName = &quot;Seeding&quot;, ILogger? bootstrapLogger = null)
-    where T : class, ISeedDirector</code></pre>
+    where T : SeedDirectorBase&lt;T&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
